@@ -2,9 +2,6 @@ import pandas as pd
 from keras.models import Sequential
 from keras.layers import Dense
 
-import os
-os.environ["PATH"] += os.pathsep + 'C:/Users/klaptor/Anaconda3/Lib/site-packages/graphviz'
-
 # Importing dataset and defining independent variables(x) and dependent variable(y)
 dataset = pd.read_csv('Churn_Modelling.csv')
 x = dataset.iloc[:, 3:13].values
